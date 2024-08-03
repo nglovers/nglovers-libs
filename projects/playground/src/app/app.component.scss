@@ -1,0 +1,10 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: black 1px solid;
+
+    * {
+        width: 100%;
+    }
+}

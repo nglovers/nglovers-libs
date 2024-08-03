@@ -1,0 +1,8 @@
+<h2>IMG-WITH-FALLBACK</h2>
+<h3>Component</h3>
+<ngs2-img-with-fallback [src]="src" [fallbackSrc]="fallbackSrc"/>
+<h3>Directive</h3>
+<img src ngs2ImgWithFallback [imageSrc]="src" [fallbackSrc]="fallbackSrc" />
+<img ngs2ImgWithFallback [src]="src" [fallbackSrc]="fallbackSrc" />
+<img src ngs2ImgWithFallback [imageSrc]="wrongSrc" [fallbackSrc]="fallbackSrc" />
+<router-outlet />

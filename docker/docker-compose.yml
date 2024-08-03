@@ -1,0 +1,12 @@
+services:
+  nglovers-libs:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: sh -c "npm install && npm run watch:img-with-fallback"
+    ports:
+      - "4200:4200"
+    expose:
+      - 4200
+    volumes:
+      - ..:/src/app
